@@ -1,1 +1,1 @@
-# Think_c
+Exercises from Allen Downey's Think C
