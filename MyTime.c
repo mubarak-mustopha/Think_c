@@ -4,12 +4,14 @@
 int main(void)
 {
 
-    int hour, minute, second;
-    hour = 16;
-    minute = 39;
+    int hour, minute, second, sec_passed, daily_sec;
+    hour = 13;
+    minute = 47;
     second = 43;
-    printf("%i seconds have passed since midnigth\n", (hour * 3600) + (minute * 60) + second);
-    printf("There are %i seconds remaining for today\n", (24 * 3600) - ((hour * 3600) + (minute * 60) + second));
-    printf("%i percent of the day is gone.\n", ((hour * 3600) + (minute * 60) + second) * 100 / (24 * 3600));
+    daily_sec = 24 * 3600;
+    sec_passed = (hour * 3600) + (minute * 60) + second;
+    printf("%i seconds have passed since midnigth\n", sec_passed);
+    printf("There are %i seconds remaining for today\n", daily_sec - sec_passed);
+    printf("%i percent of the day is gone.\n", sec_passed * 100 / daily_sec);
     return (EXIT_SUCCESS);
 }
