@@ -58,7 +58,7 @@ void SortArray(int array[], int length)
 
 int main(void)
 {
-    int arr[7] = {12, 8, 4, 9, 11, 90, 4};
+    int arr[10] = {12, 8, 4, 9, 11, 90, 4, 64, 23, 1};
     int length = sizeof(arr) / sizeof(arr[0]);
     PrintArray(arr, length);
     printf("\n");
